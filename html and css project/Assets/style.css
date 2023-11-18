@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+.header{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/img\ 1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 1px 170px;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0 0 0;
+}
+
+.nlogo{
+    width: 140px;
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: red;
+    color: white;
+    padding: 8px 18px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bolder;
+   
+}
+
+nav button:hover{
+    background: rgb(197, 17, 17);
+}
+
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.header-text h1{
+    font-size: 35px;
+    line-height: 72px;
+    font-weight: 1000;
+    max-width: 1000px;
+    font-style: italic;
+}
+
+.header-text h3, h4{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.email-signin{
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 25px;
+}
+
+.email-signin input{
+    flex: 1;
+    padding: 18px;
+    border-radius: 5px;
+    border: 1px solid rgba(54, 53, 53, 0.678);
+    outline: 0;
+    margin-left: 80px;
+    margin-right: 8px;
+    background-color: rgba(0, 0, 0, 0.438);
+    font-weight: bolder;
+    color: white;
+}
+
+.email-signin button{
+    background: red;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 13px 26px;
+}
+
+.email-signin button:hover{
+    background: rgb(197, 17, 17);
+}
+
+/* ---PART 2--- */
+
+.features{
+    padding: 50px 12%;
+    border-top: 7px solid #333;
+    font-size: 25px;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.column-txt{
+    flex-basis: 50%;
+    margin-bottom: 23px;
+}
+
+.column-img{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.column-img img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.features h2{
+    font-size: 55px;
+    font-weight: bolder;
+    margin-bottom: 23px;
+}
+
+/* ---PART 3---*/
+
+.faq{
+    padding: 12px 12%;
+    border-top: 7px solid #333;
+    text-align: center;
+    font-size: 20px;
+}
+
+.faq h2{
+    font-weight: bolder;
+    padding-top: 60px;
+    font-size: 43px;
+}
+
+.questions{
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.questions li{
+    list-style: none;
+    width: 100%;
+    padding: 3px;
+}
+
+.questions li label{
+    display: flex;
+    align-items: center;
+    padding: 22px;
+    font-size: 20px;
+    font-weight: normal;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.questions li label:hover{
+    background-color: #3f3b3b;
+}
+
+label::after{
+    content: '+';
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.questions .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 22px;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.questions input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.questions input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.faq .email-signin{
+    max-width: 700px;
+    margin: 20px auto 60px;
+}
+
+.faq small{
+    font-size: 15px;
+}
+
+/* ---LAST PART--- */ 
+
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 7px solid #333;
+}
+
+.footer h3{
+    font-size: 20px;
+    color: #b9aaaa;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .column{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .column a{
+    display: block;
+    color: #b9aaaa;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.footer .row{
+    align-items: flex-start;
+    padding: 12px 0;
+}
+
+.footer .lng-button{
+    background: rgba(87, 84, 84, 0.199);
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px ;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid rgba(54, 53, 53, 0.678);
+    
+    
+}
+
+
+.state{
+    font-size: 15px;
+    color: #b9aaaa;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+
+/* ---mobile version--- */
+
+@media only screen and (max-width: 600px){
+    .nlogo{
+        width: 100px;
+    }
+
+    nav div button{
+        padding: 8px 14px;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 22px 0 22px;
+    }
+
+    .header{
+        padding: 0;
+        height: 60vh;
+    }
+
+    .header-text{
+        position: unset;
+        transform: none;
+        padding-top: 80px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header-text form{
+        width: 95%;
+    }
+
+    .text{
+        width: 85%;
+    }
+    
+    .text h1{
+        line-height: 45px;
+        font-size: 30px;
+    }
+
+    .email-signin{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email-signin input{
+        margin: 0 0 10px 0;
+        width: 100%;
+    }
+
+    .email-signin button{
+        font-size: 18px;
+        padding: 10px 15px;
+        width: 150px;
+        height: 40px;
+        
+    }
+
+    .features, .column-txt, .column-img{
+        flex-basis: 100%;
+    }
+
+    .column-txt h2,p{
+        text-align: center;
+    }
+
+    .column-txt h2{
+        font-size: 30px;
+    }
+
+    .column-txt p{
+        font-size: 18px;
+    }
+
+    .faq{
+        padding: 12px 16px;
+    }
+    .faq h2{
+        font-size: 35px;
+    }
+    .questions .content{
+        font-size: 16px;
+        /* width: 150px; */
+    }
+    .questions li label{
+        padding: 25px;
+        font-size: 16px;
+    }
+    .faq small{
+        font-size: 20px;
+        vertical-align: 13px;
+    }
+    label::after{
+        font-size: 24px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        padding: 50px 8% 10px;
+    }
+    .footer .state {
+        text-align: left;
+    }
+}
